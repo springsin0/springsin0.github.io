@@ -1,0 +1,110 @@
+@import "my/post.scss";
+
+@import "my/sidebar.scss";
+@import "my/sidebar_main.scss";
+@import "my/sidebar_post.scss";
+@import "my/sidebar_listgroup.scss";
+
+@import "my/archives.scss";
+
+@import "my/back_to_top.scss";
+
+/*---------------------- main ------------------------*/
+
+$height-footer: 40px;
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: $height-footer;
+}
+
+
+
+strong {
+    font-weight: bolder;
+}
+
+
+/* pre.highlight { */
+    /* font-size: 90%; */
+    /* background: #272822; */
+/* } */
+
+code {
+    color: #24292e;
+    background: #e8f2fb;
+    border: 1px solid #c9e1f6;
+}
+
+
+pre code {
+    border: 0;
+    color: #24292e;
+}
+
+a {
+    color: #0366d6;
+    word-wrap: break-word;
+}
+
+.post-content{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+pre.highlight {
+    border: 0;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+}
+code.hljs {
+    background: inherit;
+    border:0;
+}
+
+body {
+    color: #24292e;
+}
+h1, h2, h3, h4, h5,h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    /* line-height: 1.25; */
+}
+
+/* h1 {font-size: 2.00em;} */
+/* h2 {font-size: 1.50em;} */
+/* h3 {font-size: 1.25em;} */
+/* h4 {font-size: 1.00em;} */
+/* h5 {font-size: 0.75em;} */
+/* h6 {font-size: 0.50em;} */
+
+/*---------------------- footer copyright ------------------------*/
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: $height-footer;
+    background-color: #F8F8F8;
+    border-top: 1px solid #EAEAEA;
+}
+
+.footer .copyright {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 0px;
+    margin: 0 auto;
+    display: block;
+    color: #404040;
+    text-align: center;
+}
