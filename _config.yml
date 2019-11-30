@@ -46,7 +46,7 @@ social_media:
   lofter_url: http://.lofter.com/
 
 #这个指的是生成的网页上要显示什么时间，md文件front matter里不写+0800的话，不管这里怎么设置jekyll一律认为那个是UTC时间。
-#timezone: Asia/Shanghai
+timezone: Asia/Shanghai
 #timezone: Japan
 #timezone: UTC
 
