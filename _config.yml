@@ -35,8 +35,8 @@ mathjax: false
 excerpt_separator: <!-- more -->
 
 #permalink: /:categories/:title.html
-permalink: /:categories/:year-:month-:day-:title.html
-
+#permalink: /:categories/:year-:month-:day-:title.html
+permalink: /blog/:year-:month-:day-:title.html
 
 social_media:
   github_url: https://github.com/springsin0

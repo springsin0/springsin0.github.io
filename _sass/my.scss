@@ -61,7 +61,6 @@ pre.highlight {
     border: 0;
     padding: 16px;
     overflow: auto;
-    font-size: 85%;
     line-height: 1.45;
     background-color: #f6f8fa;
     border-radius: 3px;
@@ -74,20 +73,53 @@ code.hljs {
 body {
     color: #24292e;
 }
-h1, h2, h3, h4, h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     margin-top: 24px;
     margin-bottom: 16px;
     font-weight: 600;
     /* line-height: 1.25; */
 }
+.post-excerpt {
+    font-size: 16px;
+}
 
-/* h1 {font-size: 2.00em;} */
+pre {
+    font-size: 90%
+}
+h1 {font-size: 2.00em;}
 /* h2 {font-size: 1.50em;} */
 /* h3 {font-size: 1.25em;} */
 /* h4 {font-size: 1.00em;} */
 /* h5 {font-size: 0.75em;} */
 /* h6 {font-size: 0.50em;} */
 
+.markdown-body code {
+    background: #e8f2fb;
+}
+
+img {
+    vertical-align: initial;
+}
+
+.post-preview .post-readmore {
+    margin: initial;
+}
+.navbar {
+    margin-bottom: initial;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+hr {
+
+}
+
+.post-pagination a {
+    background-color: #5bc0de; /*#009D00;*/
+}
 /*---------------------- footer copyright ------------------------*/
 
 .footer {

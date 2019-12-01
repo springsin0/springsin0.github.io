@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-<body>
+  <body>
     {% include {{ site.baseurl }}header.html %}
   
     {{ content }}
@@ -34,5 +34,6 @@
       var query = document.getElementById("search-input").value;
       window.open("http://google.com/search?q=" + query + "%20site:" + "{{ site.sitesearchurl}}");
     });</script>
+    
   </body>
 </html>

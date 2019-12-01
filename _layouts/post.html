@@ -27,7 +27,7 @@ layout: default
         </div>
 
         <hr>
-        <div class="post-content">
+        <div class="markdown-body"> <!-- post-content -->
           {{ content }}
         </div>
         <br><br>
@@ -68,3 +68,27 @@ layout: default
     </div>
   </div>
 </div>
+
+<script>  
+  //博文内图片删掉alt=""，以便如果显示不成功出现一个broken image icon
+  var images = document.images;
+  var pattern = /alt=""/g;
+
+  for (var i = 0, imagesLength = images.length; i < imagesLength; i++) {
+    //images[i].replace(pattern, "");
+    if (images[i].hasAttribute("alt") && images[i].alt==="")
+      //images[i].removeAttribute("alt");
+      images[i].alt="broken image";
+    console.log(images[i]);
+    
+  }
+
+  //博文内所有超链接都在新页面打开  
+  var links = document.getElementsByClassName("markdown-body")[0].getElementsByTagName("a");
+  for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+    //console.log(links[i], links[i].target);
+    if (links[i].hash[0]!="#") //本页锚点跳转不打开新页面
+      links[i].target = '_blank';
+    //console.log(links[i], links[i].target);
+  }
+</script>
