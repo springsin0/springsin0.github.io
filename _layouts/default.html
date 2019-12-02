@@ -34,6 +34,17 @@
       var query = document.getElementById("search-input").value;
       window.open("http://google.com/search?q=" + query + "%20site:" + "{{ site.sitesearchurl}}");
     });</script>
-    
+    <script>
+      if (window.location.hostname != 'localhost' && window.location.hostname != '127.0.0.1') {
+        document.write('<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153595219-1"><\/script>');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-153595219-1');
+      }
+      else{
+        console.log("localhost test no google analytics");
+      }
+    </script>
   </body>
 </html>

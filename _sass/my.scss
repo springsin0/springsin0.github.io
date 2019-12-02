@@ -35,11 +35,7 @@ strong {
     /* background: #272822; */
 /* } */
 
-code {
-    color: #24292e;
-    background: #e8f2fb;
-    border: 1px solid #c9e1f6;
-}
+
 
 
 pre code {
@@ -94,8 +90,17 @@ h1 {font-size: 2.00em;}
 /* h6 {font-size: 0.50em;} */
 
 .markdown-body code {
+    color: inherit;
     background: #e8f2fb;
+    font-size: 90%
+    /* border: 1px solid #c9e1f6; */
 }
+.markdown-body .highlight pre {
+    font-size: 90%
+    /* border: 1px solid #c9e1f6; */
+}
+
+
 
 img {
     vertical-align: initial;
@@ -120,6 +125,36 @@ hr {
 .post-pagination a {
     background-color: #5bc0de; /*#009D00;*/
 }
+
+/* .markdown-body ol { */
+    /* counter-reset: li */
+/* } */
+
+/* .markdown-body li::before { */
+    /* list-style-position: outside; */
+    /* content: counter(li)'.'; */
+    /* display: inline-block;  */
+    /* width: 1em; */
+    /* margin-left: -1em; */
+    /* font-size: 10px; */
+    /* font-weight: 600; */
+    /* counter-increment: li */
+    /* margin-left: -1.5em; */
+    /* margin-right: 0.5em; text-align: right; direction: rtl */
+/* } */
+
+.markdown-body code, .markdown-body kbd, .markdown-body pre {
+    font-family: monospace,monospace;
+}
+
+
+/* .markdown-body { */
+    /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+/* } */
+
+
+
+
 /*---------------------- footer copyright ------------------------*/
 
 .footer {
