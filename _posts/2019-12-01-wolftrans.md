@@ -105,6 +105,7 @@ wolftrans是一个控制台应用程序，以命令行的方式运行。用法�
     > CONTEXT MPS:Map004/events/5/pages/2/4/Choices
     好
     > END STRING
+    
 就能实现同一原文不同译文。
 
 另外，本软件生成的可翻译txt的内容不一定是必须要翻译的。ADV/AVG游戏一般不需要翻译RPG游戏特有的升级、战斗等相关内容，如这些文件：
