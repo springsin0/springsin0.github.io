@@ -59,8 +59,11 @@ layout: default
         </ul>
       </aside>
       {% endif %}
+      
+      {% if page.comments %}
+        {% include {{ site.baseurl }}comments.html %}
+      {% endif %} 
 
-      {%comment%}{% include {{ site.baseurl }}comments.html %}{%endcomment%}
     </div>
     
     <div class="col-md-3 post-sidebar">

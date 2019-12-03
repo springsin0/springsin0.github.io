@@ -2,7 +2,32 @@
 <html lang="{{ site.lang | default: "zh-cn" }}">
 
   {% include head.html %}
+  
+  <script>
+    //console.log('page.path:'+'{{page.path}}');
+    //console.log('page.id:','{{page.id}}');
+    //console.log('page.url:'+'{{page.url}}');
+    //console.log('page.name:'+'{{page.name}}');
+    //console.log('page.dir:'+'{{page.dir}}');
+    //console.log('site.baseurl:'+'{{site.baseurl}}:\n'+'site.url:'+'{{site.url}}:\n');
 
+    //document.write('{% raw %}{% assign subpath = '+ subpath + ' %}{% endraw %}');
+    //function a()
+    //{
+    //    return subpath;
+    //}
+    
+    subpath = '{{page.path}}';
+    subpath = subpath.replace( /^_posts\//, "");
+    //console.log('subpath='+subpath);
+    subpath = subpath.match(/(.*)(\..*)/)[1];
+    //console.log('subpath='+subpath);
+    var page_url = '{{ site.domainurl | append: page.url }}';
+    var page_indentifier = subpath;
+    console.log('page_url=%s\npage_indentifier=%s', page_url, page_indentifier);
+    
+  </script>
+  
   <body>
     {% include {{ site.baseurl }}header.html %}
   
@@ -34,6 +59,6 @@
       var query = document.getElementById("search-input").value;
       window.open("http://google.com/search?q=" + query + "%20site:" + "{{ site.sitesearchurl}}");
     });</script>
-
+    
   </body>
 </html>

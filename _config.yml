@@ -18,7 +18,8 @@ author: springsin0
 email: 
 description: > # this means to ignore newlines until "baseurl:"
   気まぐれ
-url: http://springsin0.github.io # the base hostname & protocol for your site, e.g. http://example.com
+url: https://springsin0.github.io # the base hostname & protocol for your site, e.g. http://example.com
+domainurl: https://springsin0.github.io
 sitesearchurl: springsin0.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
@@ -36,8 +37,13 @@ excerpt_separator: <!-- more -->
 
 #permalink: /:categories/:title.html
 #permalink: /:categories/:year-:month-:day-:title.html
-permalink: /blog/:year-:month-:day-:title.html
+permalink: /blog/:year-:month-:day-:title:output_ext
 
+#permalink: /blog/:year-:month-:day-:title
+
+pages:
+  permalink: :path/:basename:output_ext
+  
 social_media:
   github_url: https://github.com/springsin0
   weibo_url: http://weibo.com/u/
@@ -62,4 +68,20 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - "*.bak"
+  
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true
+  # -
+    # scope:
+      # path: "projects"
+      # type: "pages" # previously `page` in Jekyll 2.2.
+    # values:
+      # layout: "project" # overrides previous default layout
+      # author: "Mr. Hyde"
+
   

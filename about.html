@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About me
+comments: true
 ---
 
 <div class="container">
@@ -17,7 +18,9 @@ title: About me
 
       所使用的主题：<a href="https://github.com/lszero/zero-theme" target="_blank">zero-theme</a>
       <br><br>
-      {%comment%}{% include {{ site.baseurl }}comments.html %}{%endcomment%}
+      {% if page.comments %}
+        {% include comments.html %}
+      {% endif %} 
     </div>
 
     <div class="col-md-3 main-sidebar">
