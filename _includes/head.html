@@ -18,6 +18,9 @@
 
   <!-- github-markdown-css -->
   <link rel="stylesheet" href="/assets/github-markdown.css">
+  
+  <!-- github-highlight-css -->
+  <link rel="stylesheet" href="/assets/github-highlight-style.css">
 
   <!-- My CSS -->
   <link rel="stylesheet" href="/assets/main.css">
@@ -67,4 +70,30 @@
       console.log("localhost test no google analytics");
     }
   </script>
+  
+  <script>
+    //console.log('page.path:'+'{{page.path}}');
+    //console.log('page.id:','{{page.id}}');
+    //console.log('page.url:'+'{{page.url}}');
+    //console.log('page.name:'+'{{page.name}}');
+    //console.log('page.dir:'+'{{page.dir}}');
+    //console.log('site.baseurl:'+'{{site.baseurl}}:\n'+'site.url:'+'{{site.url}}:\n');
+
+    //document.write('{% raw %}{% assign subpath = '+ subpath + ' %}{% endraw %}');
+    //function a()
+    //{
+    //    return subpath;
+    //}
+    
+    subpath = '{{page.path}}';
+    subpath = subpath.replace( /^_posts\//, "");
+    //console.log('subpath='+subpath);
+    subpath = subpath.match(/(.*)(\..*)/)[1];
+    //console.log('subpath='+subpath);
+    var page_url = '{{ site.domainurl | append: page.url }}';
+    var page_indentifier = subpath;
+    console.log('page_url=%s\npage_indentifier=%s', page_url, page_indentifier);
+    
+  </script>
+  
 </head>
