@@ -58,8 +58,19 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
   <!-- Global site tag (gtag.js) - Google Analytics -->
+  
   <script>
-    if (window.location.hostname != 'localhost' && window.location.hostname != '127.0.0.1') {
+    var skipouterlink = false;
+    var testmode = 'full course';
+  </script>
+  <script src='/assets/js/testset.js'>console.log('jksdfjksl');</script>
+  <script>
+    if (testmode == 'localhost' && ['localhost', '127.0.0.1'].includes(window.location.hostname)){
+        skipouterlink = true;
+    }
+  </script>
+  <script>
+    if (!skipouterlink){
       document.write('<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153595219-1"><\/script>');
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}

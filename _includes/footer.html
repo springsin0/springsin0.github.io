@@ -1,5 +1,20 @@
 <footer class="footer">
+  <script>
+    if (!skipouterlink){
+      document.write('<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"><\/script>');
+    }
+  </script>
   <div class="copyright">
-      Copyright &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time> <a href="{{ site.url }}">{{ site.author }}</a> | Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> | Theme from <a href="https://github.com/lszero/zero-theme" target="_blank">Zero Jekyll Theme</a>
+    <!-- 访问量： -->
+    <span style="float:left;left:6px;position:absolute">
+
+      </span>
+    </span>
+    Copyright &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time> <a href="{{ site.url }}">{{ site.author }}</a> | Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> | Theme from <a href="https://github.com/lszero/zero-theme" target="_blank">Zero Jekyll Theme</a>
+    <span id="busuanzi_container_site_uv">
+      | 本站访客数 <span id="busuanzi_value_site_uv"></span>人次
+    </span>
+    <span id="busuanzi_container_page_uv">
+      | 本文阅读量 <span id="busuanzi_value_page_pv"></span>次
   </div>
 </footer>
