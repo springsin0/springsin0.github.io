@@ -166,7 +166,7 @@ Currently, Wolf Trans can be invoked with the command line:
 
 **WARNING: OUT_DIR WILL BE *DELETED* IF IT EXISTS. USE CAUTION.**
 
-`localecode`: Set Encoding CodePage for other languages, default(not set) for English. eg. GBK for Simplified Chinese, CP950 for Traditional Chinese, CP949 for Korean... About Encoding CodePage, See this https://docs.ruby-lang.org/ja/latest/class/Encoding.html e.g.
+`localecode`: Set Encoding CodePage for other languages, default(not set) for English. eg. GBK for Simplified Chinese, CP950 for Traditional Chinese, CP949 for Korean... About Encoding CodePage, See this <https://docs.ruby-lang.org/ja/latest/class/Encoding.html> e.g.
 
 When destination translated language is English:
 
