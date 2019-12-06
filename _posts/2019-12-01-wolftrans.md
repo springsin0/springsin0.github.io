@@ -8,7 +8,7 @@ tags: [工具, 翻译, 游戏]
 (English description is [*Below*](#wolf-trans), please pull down)
 
 Wolf Trans是一个Wolf RPG游戏的汉化工具/辅助翻译工具，用于减少汉化/本地化Wolf RPG游戏的难度和工作量。它将游戏数据文件(.project, .dat, .mps)中所有可翻译的文字内容抽出为txt文本文件，翻译者翻译编辑txt文件后，它再将翻译后的文字整合进数据文件重新输出(.project, .dat, .mps)。
-
+此版本以原作者Eliza的开源项目<https://github.com/elizagamedev/wolftrans> 为基础略作修改，支持中文汉字，原版只能使用日文汉字。
 <!-- more -->
 
 WolfTrans抽出的txt是由一个个类似这样的翻译段组成的：
@@ -123,7 +123,8 @@ A translation tool for Wolf RPG Editor games
 
 ## Summary
 Wolf Trans is a set of tools to aid in the translation of games made using
-[Wolf RPG Editor](http://www.silversecond.com/WolfRPGEditor/). The syntax and functionality is inspired primarily by the [RPG Maker Trans](http://rpgmakertrans.bitbucket.org/) project.
+[Wolf RPG Editor](http://www.silversecond.com/WolfRPGEditor/). The syntax and functionality is inspired primarily by the [RPG Maker Trans](http://rpgmakertrans.bitbucket.org/) project.  
+This version is based on original author Eliza's project <https://github.com/elizagamedev/wolftrans>, made some small changes, support Chinese charaters, original version can only use Japanese charaters.
 
 ## Installation
 Download all source code zip file and uncompress to a folder.
