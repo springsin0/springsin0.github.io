@@ -40,7 +40,7 @@ WolfTrans抽出的txt是由一个个类似这样的翻译段组成的：
 2.打开txt文件，翻译、编辑、保存  
 3.再次运行wolftrans（命令参数与第1步完全相同），根据txt文本文件中的翻译后内容重新生成游戏数据文件
 
-确认你已经安装好了ruby，需要使用ruby运行Wolf Trans安装文件夹里的**bin\wolftrans**，例如:
+确认你已经安装好了ruby，需要使用ruby运行Wolf Trans安装的文件夹下**bin**文件夹里的**wolftrans**，例如:
     
     ruby d:\wolftrans\bin\wolftrans 
     
@@ -150,7 +150,7 @@ All of the translatable game text is first extracted by Wolf Trans into plaintex
 2.Open txt files, translate, edit and save.  
 3.Run wolftrans again(command parameters are same as step 1), rebuild game data files according to translated content in txt files.
 
-Make sure you have already installed ruby. You need to run **bin\wolftrans** in Wolf Trans installed folder by using **ruby**. For exsample:
+Make sure you have already installed ruby. You need to run **wolftrans** in the **bin** folder of the Wolf Trans installed folder by using **ruby**. For exsample:
     
     ruby d:\wolftrans\bin\wolftrans 
     
