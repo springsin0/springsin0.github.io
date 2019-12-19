@@ -155,7 +155,11 @@ hr {
     /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
 /* } */
 
-
+/* .markdown-body code, .markdown-body pre { */
+    /* font-family:monospace; */
+/* } */
+/* Consolas字体 0中间有斜杠，不会与大写O混淆，但这个字体不支持中文 */
+/* 新宋体NSimSun字体 0容易与大写O混淆 */
 
 
 /*---------------------- footer copyright ------------------------*/
